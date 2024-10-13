@@ -15,3 +15,12 @@ I do have another one that states the hours of productivity I've made (in hours)
 
 ## My career prospects?
 ML and data science is still quite broad in terms of a career. Still wondered what kind of data science and ML I'd like to do?
+
+So I decided to consult chatgpt, and see what career options may suit me as a newbie.
+
+* ML Engineer - 90~160k - High/Very High demand
+* Data Scientist (predictive modelling) - 90~140k - High demand
+* Big Data Engineer/Data Architect - 110~170k - High/Very High demand
+* Quantitative Analyst/Finance - 120~180k - Moderate demand
+* Healthcare - 90~160k - High demand
+* Business Intelligence/Data Analytics lead - 80~120k - High demand
