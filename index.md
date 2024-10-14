@@ -3,5 +3,5 @@ Hey there! Welcome to my little space. Here documenting and help with processing
 ![lmao](images/amUVFzg1wNZKg.webp)
 
 Here's a few links to my computery shenanigans: 
-[Github repository](https://github.com/Tenatic-X?tab=repositories)
-[Kaggle](https://www.kaggle.com/tenaticx)
+* [Github repository](https://github.com/Tenatic-X?tab=repositories)
+* [Kaggle](https://www.kaggle.com/tenaticx)
