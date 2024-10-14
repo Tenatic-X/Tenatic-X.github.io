@@ -1,7 +1,7 @@
-Hello and welcome to this blog. Edit the `index.md` file to change this content. All pages on the blog, including this one, use [Markdown](https://guides.github.com/features/mastering-markdown/). You can include images:
+Hey there! Welcome to my little space. Here documenting and help with processing/reflecting on my ML and Data Science journey, but also wanna keep this space casual and fun as well!
 
-![Image of fast.ai logo](images/logo.png)
+![lmao](images/amUVFzg1wNZKg.webp)
 
-## This is a title
-
-And you can include links, like this [link to fast.ai](https://www.fast.ai). Posts will appear after this file. 
+Here's a few links to my computery shenanigans: 
+[Github repository](https://github.com/Tenatic-X?tab=repositories)
+[Kaggle](https://www.kaggle.com/tenaticx)
