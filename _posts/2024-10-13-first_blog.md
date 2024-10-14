@@ -24,3 +24,4 @@ So I decided to consult chatgpt, and see what career options may suit me as a ne
 * Quantitative Analyst/Finance - 120~180k - Moderate demand
 * Healthcare - 90~160k - High demand
 * Business Intelligence/Data Analytics lead - 80~120k - High demand
+ 
