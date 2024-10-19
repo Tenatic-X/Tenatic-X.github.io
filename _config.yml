@@ -15,7 +15,8 @@ email: deanckbusiness@gmail.com
 twitter_username:
 
 header_pages:
-  - archive.html
+  - title: Blog Archive
+    url: /archive.html
 
 # Set this to true to get LaTeX math equation support
 use_math:
