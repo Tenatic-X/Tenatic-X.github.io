@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "2024.10.13 First blog post!"
+title: "13th First blog post!"
 description: "Gonna see how this goes"
 tags: Miscellaneous
 ---
