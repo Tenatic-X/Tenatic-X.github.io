@@ -5,7 +5,7 @@ description: "Thinking about possible large personal projects to work on, to uti
 tags: Miscellaneous
 ---
 
-# 2024.10.14 Project Ideation
+# Project Ideation
 Thinking about the personal projects to create once I finish this course, I figured that the communication portion is going to be a bit of a challenge compared to technical aspects.
 
 With communication, I'm thinking of creating two different presentations for two separate niches. Teammates and Project Manager.
