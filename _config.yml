@@ -14,6 +14,9 @@ github_username: Tenatic-X
 email: deanckbusiness@gmail.com
 twitter_username:
 
+# Add your personal posts here
+personal: [] # initialize as an empty array
+
 header_pages:
   - title: Blog Archive
     url: /archive.html
