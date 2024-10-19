@@ -1,53 +1,53 @@
+
+<!-- Site build date: {{ "now" | date: "%FT%T%z" }} -->
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  {%- seo -%}
-  <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
+
+  <!-- Begin SEO -->
+  {% seo %}
+  <!-- End SEO -->
+
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
-  {%- feed_meta -%}
-  {%- if jekyll.environment == 'production' and site.google_analytics -%}
-    {%- include google-analytics.html -%}
-  {%- endif -%}
+  <link rel="stylesheet" type="text/css" href="/css/override.css">
 
-  {% if site.use_math %}
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
-    <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function() {
-        renderMathInElement( document.body, {
-          delimiters: [
-            {left: "$$", right: "$$", display: true},
-            {left: "[%", right: "%]", display: true},
-            {left: "$", right: "$", display: false}
-          ]}
-        );
-      });
-    </script>
-  {% endif %}
+  {% feed_meta %}
 
-  <script>
-  function wrap_img(fn) {
-    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
-        var elements = document.querySelectorAll(".post img");
-        Array.prototype.forEach.call(elements, function(el, i) {
-            if (el.getAttribute("title")) {
-                const caption = document.createElement('figcaption');
-                var node = document.createTextNode(el.getAttribute("title"));
-                caption.appendChild(node);
-                const wrapper = document.createElement('figure');
-                wrapper.className = 'image';
-                el.parentNode.insertBefore(wrapper, el);
-                el.parentNode.removeChild(el);
-                wrapper.appendChild(el);
-                wrapper.appendChild(caption);
-            }
-        });
-    } else { document.addEventListener('DOMContentLoaded', fn); }
-  }
-  window.onload = wrap_img;
+  {% if jekyll.environment == 'production' and site.google_analytics -%}
+  <!-- Begin Google Analytics -->
+  {% include google-analytics.html %}
+  <!-- End Google Analytics -->
+  {%- endif %}
+
+  <!-- Begin highlight.js support -->
+  <link rel="stylesheet" href="/js/highlightjs/styles/github.css">
+  <link rel="stylesheet" href="/js/highlightjs/styles/ssms.css" />
+
+  <script type="text/javascript" src="/js/highlightjs/highlight.min.js"></script>
+
+  <script type="text/javascript" src="/js/highlightjs/languages/plaintext.min.js"></script>
+  <script type="text/javascript" src="/js/highlightjs/languages/powershell.min.js"></script>
+  <script type="text/javascript" src="/js/highlightjs/languages/tsql.min.js"></script>
+  <script type="text/javascript" src="/js/highlightjs/languages/dot.min.js"></script>
+  <script type="text/javascript" src="/js/highlightjs/languages/python.min.js"></script>
+  <script type="text/javascript" src="/js/highlightjs/languages/csharp.min.js"></script>
+
+  <script type="text/javascript"> hljs.highlightAll(); </script>
+  <!-- end highlight.js support -->
+
+  {% if jekyll.environment == 'production' -%}
+  <!-- dark theme using DarkReader -->
+  <script src="//unpkg.com/darkreader@4.9.40/darkreader.js"></script>
+  <script type="text/javascript">
+    DarkReader.setFetchMethod(window.fetch); // Fix to remedy CORS errors in chrome console
+    //DarkReader.enable();
+    DarkReader.auto( {brightness: 100, contrast: 90, sepia: 10} );
   </script>
+  {%- endif %}
 
+  <!-- mathjax support
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  -->
 </head>
