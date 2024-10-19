@@ -14,6 +14,9 @@ github_username: Tenatic-X
 email: deanckbusiness@gmail.com
 twitter_username:
 
+header_pages:
+  - archive.html
+
 # Set this to true to get LaTeX math equation support
 use_math:
 
