@@ -8,4 +8,4 @@ learnt my MAPE had issues - dividing 0 to get infinity. using y_true with value 
 
 def mean_absolute_percent_error(y_true, y_pred):
     y_true, y_pred = np.array(y_true), np.array(y_pred)
-        return np.mean(np.abs(y_true - y_pred) / baseline) * 100 
+        return np.mean(np.abs(y_true - y_pred) / y_true) * 100 
