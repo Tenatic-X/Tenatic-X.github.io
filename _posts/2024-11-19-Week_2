@@ -1,0 +1,11 @@
+---
+layout: post
+tags: Weight/Waist_prediction_project
+todolist: Title, Overview, Projects and Tasks, Challenges and Solutions, Learnings and Insights, Next Steps, Reflections
+---
+
+learnt my MAPE had issues - dividing 0 to get infinity. using y_true with value 0s.
+
+def mean_absolute_percent_error(y_true, y_pred):
+    y_true, y_pred = np.array(y_true), np.array(y_pred)
+        return np.mean(np.abs(y_true - y_pred) / baseline) * 100 
