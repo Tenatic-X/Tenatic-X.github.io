@@ -1,7 +1,5 @@
 ---
 layout: post
-title: "Week 2"
-description: "Week 2"
 tags: Weight/Waist_prediction_project
 todolist: Title, Overview, Projects and Tasks, Challenges and Solutions, Learnings and Insights, Next Steps, Reflections
 ---
