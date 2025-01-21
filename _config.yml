@@ -20,6 +20,7 @@ personal: [] # initialize as an empty array
 header_pages:
   - about.md
   - archive.html
+  - projects.html
 
 # Set this to true to get LaTeX math equation support
 use_math:
