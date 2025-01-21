@@ -1,15 +1,14 @@
 ---
 layout: page
-title: Project Lists
+title: Project List
 ---
 
 <a href="/project-date.html">Sort by date</a>
 
-{% for tag in site.tags %}
-<h3>{{- tag[0] -}}</h3>
-<ul>
-  {%- for post in tag[1] %}
-  <li><a href="{{ post.url }}">{{ post.date | date: "%b %Y" }} - {{ post.title }}</a></li>
-  {%- endfor %}
-</ul>
-{%- endfor %}
+{% assign projects = site.projects | sort: 'date' %}
+{% for project in projects %}
+  <h3>{{ project.title }}</h3>
+  <ul>
+    <li><a href="{{ project.url }}">{{ project.date | date: "%b %Y" }} - {{ project.title }}</a></li>
+  </ul>
+{% endfor %}
