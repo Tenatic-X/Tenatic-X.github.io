@@ -5,15 +5,16 @@ title: Project Archive
 
 <a href="/projects.html">Sort by category</a>
 
-{%- assign allprojects = site.projects | sort_natural: "date" | reverse %}
+{%- assign allprojects = site.projects | sort: 'date' | reverse %}
 
-{%- assign projectsByYearMonth = allprojects | group_by_exp:"allprojects", "allprojects.date | date: '%Y %B'"  %}
+{%- assign projectsByTitle = allprojects | group_by_exp: "project", "project.title" %}
 
-{%- for yearMonth in projectsByYearMonth %}
-  <h3>{{ yearMonth.name }}</h3>
+{%- for titleGroup in projectsByTitle %}
+  <h3>{{ titleGroup.name }}</h3>
   <ul>
-    {%- for project in yearMonth.items %}
-      <li><a href="{{ project.url }}">{{ project.title }}</a></li>
+    {%- for project in titleGroup.items %}
+      {%- assign filename = project.path | split: '/' | last | remove: '.md' %}
+      <li><a href="{{ project.url }}">{{ filename | replace: '-', ' ' | capitalize }}</a> - {{ project.date | date: "%b %Y" }}</li>
     {%- endfor %}
   </ul>
 {%- endfor %}
