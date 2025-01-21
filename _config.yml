@@ -47,5 +47,10 @@ kramdown:
   math_engine: katex
   input: GFM
   auto_ids: true
+
+collections:
+  projects:
+    output: true
+
   hard_wrap: false
   syntax_highlighter: rouge
