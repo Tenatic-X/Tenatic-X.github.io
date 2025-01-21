@@ -7,16 +7,9 @@ title: Project Archive
 
 {%- assign allprojects = site.projects | sort: 'date' | reverse %}
 
-{%- assign projectsByCategory = allprojects | group_by: 'categories' %}
-
-{%- for categoryGroup in projectsByCategory %}
-  <h3>{{ categoryGroup.name }}</h3>
-  <ul>
-    {%- for project in categoryGroup.items %}
-      {%- assign filename = project.path | split: '/' | last | remove: '.md' %}
-      {%- if project.categories contains categoryGroup.name %}
-        <li><a href="{{ project.url }}">{{ filename | replace: '-', ' ' | capitalize }}</a> - {{ project.date | date: "%b %Y" }}</li>
-      {%- endif %}
-    {%- endfor %}
-  </ul>
-{%- endfor %}
+<ul>
+  {%- for project in allprojects %}
+    {%- assign filename = project.path | split: '/' | last | remove: '.md' %}
+    <li><a href="{{ project.url }}">{{ filename | replace: '-', ' ' | capitalize }}</a> - {{ project.date | date: "%b %Y" }}</li>
+  {%- endfor %}
+</ul>
