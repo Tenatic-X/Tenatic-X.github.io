@@ -7,7 +7,6 @@ title: Project List
 
 {% assign projects = site.projects | sort: 'date' %}
 {% for project in projects %}
-  <h3>{{ project.title }}</h3>
   <ul>
     <li><a href="{{ project.url }}">{{ project.date | date: "%b %Y" }} - {{ project.title }}</a></li>
   </ul>
