@@ -20,17 +20,21 @@ This has been a very challenging 2 weeks, with so many trials and errors, but wa
 * Train up to 1,000 Epochs, the model seems to start flatten out and stop improving at random points during training. When checking the graph, improvements can be seen, but there are just areas where it refuses to make predictions, and stay at 0.
 
 This is an example of the Loss, getting stuck at some point in the training:
+
   ![1ef41c4c-1f73-4c0d-9fbb-8e7b4b28ad94](https://github.com/user-attachments/assets/c00cee56-ba61-48e1-bd4b-3a2fe5cd0724)
 
 And this is an example of my model, where it just predicts sometimes, then it doesn't in certain areas:
+
 ![8c1d849b-8147-44ec-978a-d19238500c7f](https://github.com/user-attachments/assets/e2b2b3a2-deae-4f04-8ccf-90afdf444841)
 
 * Many failed attempts later, I asked ChatGPT for a model example, and heavily improved the model's training. I had problem with the model's loss flattening out randomly, and this model from ChatGPT doesnt flatten!
 
 This is it's Loss overtime:
+
 ![2170f64d-3af4-413b-a928-f9797b921d5a](https://github.com/user-attachments/assets/e683c241-1e38-4790-8534-8de92bdd7ab1)
 
 And it's prediction:
+
 ![1d79a184-e01f-4c81-811d-5c7fdcd4b9d3](https://github.com/user-attachments/assets/f7358b22-39ad-4ff0-80a7-920b9b04fcb3)
 
 
