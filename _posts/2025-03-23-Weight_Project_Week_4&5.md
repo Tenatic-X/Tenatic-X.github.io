@@ -4,6 +4,8 @@ tags: Weight/Waist_prediction_project
 todolist: Title, Overview, Projects and Tasks, Challenges and Solutions, Learnings and Insights, Next Steps, Reflections
 ---
 
+# Week 4 & 5
+
 ## Overview/Tasks
 
 Continuing the weight and waist project, now working on TensorFlow models, and experimenting with hyperparameters, layers, activations etc.
