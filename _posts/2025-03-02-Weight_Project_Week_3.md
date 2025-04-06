@@ -4,6 +4,8 @@ tags: Weight/Waist_prediction_project
 todolist: Title, Overview, Projects and Tasks, Challenges and Solutions, Learnings and Insights, Next Steps, Reflections
 ---
 
+# Week 3
+
 ## Overview/Tasks
 
 Continuing the weight and waist project, using different ML models, tweaking hyperparameters, and using known ways to improve model performance.
