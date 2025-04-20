@@ -8,6 +8,7 @@ todolist: Title, Overview, Projects and Tasks, Challenges and Solutions, Learnin
 
 ## Relevant Work
 [Weight and waist workbook](https://tenatic-x.github.io/_projects/weight%20and%20waist%20workbook.html)
+
 [Weight and waist pdf report](https://tenatic-x.github.io/_projects/workbook%20report.pdf)
 
 ## Overview/Tasks
