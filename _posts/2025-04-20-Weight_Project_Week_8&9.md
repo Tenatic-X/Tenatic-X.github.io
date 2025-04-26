@@ -6,6 +6,11 @@ todolist: Title, Overview, Projects and Tasks, Challenges and Solutions, Learnin
 
 # Week 8 & 9
 
+## Relevant Work
+[Weight and waist workbook](https://tenatic-x.github.io/_projects/weight%20and%20waist%20workbook.html)
+
+[Weight and waist pdf report](https://tenatic-x.github.io/_projects/workbook%20report.pdf)
+
 ## Overview/Tasks
 
 Continuing the weight and waist project, now finalizing models, and also tweaking whatever is needed. In addition, create a pdf report of the project's entirety so it's easier to consume by the public, over my messy trial and error models in .ipynb
