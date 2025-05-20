@@ -1,0 +1,102 @@
+---
+layout: post
+title: "Week 12&13"
+description: "Week 12&13"
+tags: Weekly(ish)_update
+todolist: Title, Overview, Projects and Tasks, Challenges and Solutions, Learnings and Insights, Next Steps, Reflections
+---
+
+# Week 12 & 13
+
+## Relevant Project
+[NZMSA content](https://github.com/NZMSA/2025-Phase-1)
+[NZMSA Phase 1 ipynb workbook]https://tenatic-x.github.io/projects/nzmsa%202025%20phase%201%20code.html
+
+
+## Overview
+Attempting and finishing phase 1 of New Zealand Microsoft Accelerator programme.
+
+## Project and Tasks
+* Finish up Phase 1 learning materials of NZMSA
+
+## Challenges and Learnings
+
+### Poorly written learning material in Phase 1
+Not only do I have trouble staying concentrated with reading materials, it didn't help that the shit that was written in the learning material was pretty horrible. They seem to heavily overexplain/repeat content that has a pretty basic concept, or things that don't require much to decipher through visuals like graphs. However, when it comes to explaining the more in depth/complex materials, most of it was done in computer science lingo/terms that barely explained the concepts, sometimes with a slight underlying tone of snarkiness. As if the content that was shown is something we're all supposed to be familiar with, or is 'simple' to understand.
+
+Honestly drove me fucking nuts when trying to understand what is going on. But thankfully, ChatGPT was able to help me decipher and properly understand these concepts that I was unfamiliar with, to then jot them down on my workbook.
+
+### Model's weight/bias affecting the loss
+Weights are the strength of connection between layers from node to node, and Bias is an input value for these nodes. Both contribute to loss, aka how far the model is from prediction to accuracy. These two parameters are highly important to reaching a good prediction, and is something we can choose to manipulate ourselves, rather than the model, in case of possible errors or inneficient processes (like if its flattening out or gradient explodes). Before, the model was more of a black box of mystery. But we are able to take control of it whenever nessecary.
+
+### What is the point of learning `gradient (derivative)` in tensor, when the model does everything for us?
+There are a few benefits, such as debugging your training. When you find vanishing or exploding gradients, you'd want to try and fix that from happening again. Interpretation bias or a model that's stuck at a point in the layers, or for research and building a novel architecture, where you want to tweak how the gradients should exactly behave and flow.
+
+It really helps to at least know their existence, and how much the loss is changed/influenced, when the weight of the value is also changed. They are the fuel for model training, as it helps tell the model, how it should change itself to reach a lower loss value.
+
+### What is a Dense layer?
+A basic building block of neural network layers, represented as: $output = xW + b$
+
+x > input vector(output of values from previous layer), W > weight, b > bias
+
+What it does is multiply the input variables with the weight, add it up with bias, and then apply it with an activation function (ReLU, sigmoid, etc.), and send the results to the next layer.
+
+For example `ReLU` is like: $ReLU(x) = max(0,x)$ > gives > $Relu(8.5) = 8.5$
+
+But if ReLU(-4.2) > gives 0. It only outputs positives, but returns all negatives to 0. This process allows ReLU to give non-linear predictions, and save on computation resources.
+
+### What are the layers in CNN, and why it's important?
+CNN or Convolutional Neural Networks help extract the most important information or features of an image. They do so by applying a filter to the image.
+
+An example of a 3x3 convolutional layer filter:
+
+```python
+ 1 -1  1
+-1  0 -1
+ 1 -1  1
+```
+
+An image is a matrix with pixel values. You apply the filter by `overlaying` it on an image, then calculated a weighted sum of the corresponding image pixel. Result is assigned to the centre cell of the equivalent to a 3x3 square. Let's say we have a 6x6 image with the pixel values:
+
+```python
+255 255 255 255 255 255 
+255 255 100 255 255 255
+255 100 100 100 255 255
+100 100 100 100 100 255
+255 255 255 255 255 255
+255 255 255 255 255 255
+```
+
+Applying the filter to the top left 3x3 area of image would look like this:
+
+```python
+255 255 255      1  -1   1    (255 x 1)+(255 x -1)+(255 x 1) +
+255 255 100  x  -1   0  -1  = (255 x -1)+(255 x 0)+(100 x -1) +   = 155
+255 100 100      1  -1   1    (255 x1 )+(100 x -1)+(100 x 1)
+```
+
+The result is assigned to the centre pixel of 3x3 area:
+
+```python
+ ?   ?   ?   ?   ?   ?  
+ ?  155  ?   ?   ?   ?
+ ?   ?   ?   ?   ?   ?
+ ?   ?   ?   ?   ?   ?
+ ?   ?   ?   ?   ?   ?
+ ?   ?   ?   ?   ?   ?
+```
+
+The resulting feature map will look like this
+![fgnfgngrnt](https://github.com/user-attachments/assets/cf54c211-146d-4b55-aa70-3ab4bd4915a3)
+
+Then you got Pooling layers, that only extract the maximum pixel value of a 2x2 area:
+![pooling](https://github.com/user-attachments/assets/63b0bc4c-564f-4f29-9737-4c59da6fcf99)
+
+
+## Next steps
+
+Now that Phase 1 is done, I'm looking to further continue on the ZtM tensorflow course, and build up a bit of knowledge before thinking of the go-ahead for the stock ML model.
+
+## Reflection
+
+Still absolutely horrendous at reading materials and documentation, especially poorly written ones. Glad with the invention of AI who can help me break down these steps.
