@@ -7,7 +7,7 @@ This page includes the list of workbooks I've detailed on through my blog. They 
 
 <a href="/project-date.html">Sort by date</a>
 
-{%- assign allprojects = site.projects | sort: 'date' | reverse %}
+{% assign projects = site.projects | sort: 'date' %}
 {% for project in projects %}
   <ul>
     <li><a href="{{ project.url }}">{{ project.date | date: "%b %Y" }} - {{ project.title }}</a></li>
