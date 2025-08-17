@@ -3,11 +3,11 @@ layout: page
 title: Project List
 ---
 
-Hell;o
+This page includes the list of workbooks I've detailed on through my blog. They include a mix of workbooks from studying materials, and personal work (which have been labeled).
 
 <a href="/project-date.html">Sort by date</a>
 
-{% assign projects = site.projects | sort: 'date' %}
+{%- assign allprojects = site.projects | sort: 'date' | reverse %}
 {% for project in projects %}
   <ul>
     <li><a href="{{ project.url }}">{{ project.date | date: "%b %Y" }} - {{ project.title }}</a></li>
