@@ -13,3 +13,10 @@ This page includes the list of workbooks I've detailed on through my blog. They 
     <li><a href="{{ project.url }}">{{ project.date | date: "%b %Y" }} - {{ project.title }}</a></li>
   </ul>
 {% endfor %}
+
+<ul>
+  {%- for project in allprojects %}
+    {%- assign filename = project.path | split: '/' | last | remove: '.md' %}
+    <li><a href="{{ project.url }}">{{ filename | replace: '-', ' ' | capitalize }}</a> - {{ project.date | date: "%b %Y" }}</li>
+  {%- endfor %}
+</ul>
