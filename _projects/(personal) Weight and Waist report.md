@@ -1,6 +1,7 @@
 ---
 layout: project
 date: 2025-04-20
+category: personal
 ---
 
 
