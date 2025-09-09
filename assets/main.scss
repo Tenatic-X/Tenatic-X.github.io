@@ -60,41 +60,24 @@
 
 .codecell table { width: auto; }
 
-/* Category highlights */
+/* Remove bullets and reset padding for the project list */
+.project-list {
+  list-style: none;   /* removes bullets */
+  padding-left: 0;    /* removes extra left indentation */
+  margin: 0;          /* optional: tighten spacing */
+}
+
+/* Space between list items */
+.project-list li {
+  margin: 6px 0;
+  padding: 2px 4px;
+}
+
+/* Category highlight wrapper */
 .category {
+  display: inline-block; /* ensures background wraps the text */
   border-radius: 6px;
   padding: 4px 6px;
-  margin: 4px 0;
-  list-style-type: none; /* optional: removes default bullet styling */
-}
-
-/* Different background colors */
-.category.study {
-  background-color: #ffe87a; /* light yellow */
-}
-
-.category.homework {
-  background-color: #ff8c8c; /* light red/pink */
-}
-
-.category.personal {
-  background-color: #91caff; /* light blue */
-}
-
-
-
-
-/* Add spacing before the project list */
-p {
-  margin-bottom: 1.5rem; /* adds a paragraph space before the list */
-}
-
-/* Category highlights (already added earlier, but just making sure) */
-.category {
-  border-radius: 6px;
-  padding: 2px 6px;
-  margin: 0 2px;
-  display: inline-block;
 }
 
 /* Background colors */
@@ -110,14 +93,7 @@ p {
   background-color: #91caff; /* light blue */
 }
 
-/* Optional: add spacing between list items */
-.project-list li {
-  margin: 6px 0;
-  padding: 2px 4px;
-}
-
-/* Remove bullets and reset padding for the project list */
-.project-list {
-  list-style: none;   /* removes bullets */
-  padding-left: 0;    /* removes extra left indentation */
+/* Paragraph spacing before the list */
+p {
+  margin-bottom: 1.5rem;
 }
