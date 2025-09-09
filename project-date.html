@@ -3,11 +3,17 @@ layout: page
 title: Project List
 ---
 
-This page includes the list of workbooks I've detailed on through my blog. They include a mix of workbooks from "study" materials, to "homework" that came from these study materials, and "personal" work (which have been labeled).
+<p>
+  This page includes the list of workbooks I've detailed on through my blog. 
+  They include a mix of workbooks from 
+  <span class="category study">study</span> materials, 
+  to <span class="category homework">homework</span> that came from these study materials, 
+  and <span class="category personal">personal</span> work (which have been labeled).
+</p>
 
 {%- assign allprojects = site.projects | sort: 'date' | reverse %}
 
-<ul>
+<ul class="project-list">
   {%- for project in allprojects %}
     {%- assign filename = project.path | split: '/' | last | remove: '.md' %}
     <li class="category {{ project.category }}">
@@ -16,4 +22,3 @@ This page includes the list of workbooks I've detailed on through my blog. They 
     </li>
   {%- endfor %}
 </ul>
-
