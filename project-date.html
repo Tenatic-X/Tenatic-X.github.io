@@ -17,9 +17,10 @@ title: Project List
   {%- for project in allprojects %}
     {%- assign filename = project.path | split: '/' | last | remove: '.md' %}
     <li>
-      <a href="{{ project.url }}">{{ filename | replace: '-', ' ' | capitalize }}</a> 
+      <span class="category {{ project.category }}">
+        <a href="{{ project.url }}">{{ filename | replace: '-', ' ' | capitalize }}</a>
+      </span>
       - {{ project.date | date: "%b %Y" }}
-      <span class="category {{ project.category }}"></span>
     </li>
   {%- endfor %}
 </ul>
