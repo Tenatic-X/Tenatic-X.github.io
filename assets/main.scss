@@ -60,3 +60,26 @@
 
 .codecell table { width: auto; }
 
+/* Project category pills */
+.category {
+  display: inline-block;
+  padding: 2px 8px;
+  margin-left: 6px;
+  border-radius: 12px;
+  font-size: 0.8em;
+  font-weight: bold;
+  color: #000; /* ensures readability */
+}
+
+/* Different highlight colors */
+.category.study {
+  background-color: #ffeb99; /* yellow */
+}
+
+.category.homework {
+  background-color: #ff9999; /* red */
+}
+
+.category.personal {
+  background-color: #99ccff; /* blue */
+}
