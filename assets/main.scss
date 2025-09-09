@@ -80,3 +80,39 @@
 .category.personal {
   background-color: #91caff; /* light blue */
 }
+
+
+
+
+/* Add spacing before the project list */
+p {
+  margin-bottom: 1.5rem; /* adds a paragraph space before the list */
+}
+
+/* Category highlights (already added earlier, but just making sure) */
+.category {
+  border-radius: 6px;
+  padding: 2px 6px;
+  margin: 0 2px;
+  display: inline-block;
+}
+
+/* Background colors */
+.category.study {
+  background-color: #fff6cc; /* light yellow */
+}
+
+.category.homework {
+  background-color: #ffe0e0; /* light red/pink */
+}
+
+.category.personal {
+  background-color: #91caff; /* light blue */
+}
+
+/* Optional: add spacing between list items */
+.project-list li {
+  margin: 6px 0;
+  padding: 2px 4px;
+}
+
