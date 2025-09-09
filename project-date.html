@@ -10,10 +10,9 @@ This page includes the list of workbooks I've detailed on through my blog. They 
 <ul>
   {%- for project in allprojects %}
     {%- assign filename = project.path | split: '/' | last | remove: '.md' %}
-    <li>
+    <li class="category {{ project.category }}">
       <a href="{{ project.url }}">{{ filename | replace: '-', ' ' | capitalize }}</a> 
       - {{ project.date | date: "%b %Y" }}
-      <span class="category {{ project.category }}">{{ project.category | capitalize }}</span>
     </li>
   {%- endfor %}
 </ul>
