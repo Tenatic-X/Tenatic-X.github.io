@@ -60,26 +60,23 @@
 
 .codecell table { width: auto; }
 
-/* Project category pills */
+/* Category highlights */
 .category {
-  display: inline-block;
-  padding: 2px 8px;
-  margin-left: 6px;
-  border-radius: 12px;
-  font-size: 0.8em;
-  font-weight: bold;
-  color: #000; /* ensures readability */
+  border-radius: 6px;
+  padding: 4px 6px;
+  margin: 4px 0;
+  list-style-type: none; /* optional: removes default bullet styling */
 }
 
-/* Different highlight colors */
+/* Different background colors */
 .category.study {
-  background-color: #ffeb99; /* yellow */
+  background-color: #fff6cc; /* light yellow */
 }
 
 .category.homework {
-  background-color: #ff9999; /* red */
+  background-color: #ffe0e0; /* light red/pink */
 }
 
 .category.personal {
-  background-color: #99ccff; /* blue */
+  background-color: #e0f0ff; /* light blue */
 }
