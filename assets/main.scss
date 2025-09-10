@@ -5,12 +5,15 @@
 @import "{{ site.theme }}";
 
 .post img {
-        display: block;
-        border:1px solid #021a40;
-        vertical-align: top;
-        margin-left: auto;
-        margin-right: auto;
+    display: block;
+    border: 1px solid #021a40;
+    vertical-align: top;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;           // ✅ maintain aspect ratio
+    max-width: 100%;        // ✅ prevent overflow (optional safeguard)
 }
+
 
 .post figcaption {
   text-align: center;
