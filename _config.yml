@@ -51,4 +51,7 @@ kramdown:
 collections:
   projects:
     output: true
-    permalink: /projects/:name.html
+    
+hand_wrap: false
+kramdown:
+  syntax_highlighter: rouge
