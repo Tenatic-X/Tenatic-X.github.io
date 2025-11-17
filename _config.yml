@@ -51,7 +51,7 @@ kramdown:
 collections:
   projects:
     output: true
-
+ 
 highlighter: rouge
 markdown: kramdown
 kramdown:
