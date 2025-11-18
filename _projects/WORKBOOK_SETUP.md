@@ -4,21 +4,72 @@ date: 2002-09-19
 category: 
 ---
 
-Html is a bitch and here's a quick setup for how to copy paste
 
-Copy:
-```
----
+{% raw %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>HTML Copy Guide</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+code, pre {
+    background: #f5f5f5;
+    padding: 6px 10px;
+    border-radius: 6px;
+    display: block;
+    white-space: pre-wrap;
+}
+h1 {
+    margin-top: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>HTML is a Bitch — Quick Setup Guide</h1>
+
+<p>Use this guide whenever you add exported HTML notebooks to your site.</p>
+
+<h2>1. Copy this front matter block:</h2>
+
+<pre><code>---
 layout: project
-date: 
+date: yyyy-mm-dd
 category: 
 ---
-```
-date > reads as `yyyy-mm-dd`
-category > personal, study, or homework - pick the label 
+</code></pre>
 
-now copy:
-`{% raw %}`
+<p><strong>date</strong> → use format <code>yyyy-mm-dd</code><br>
+<strong>IMPORTANT:</strong> Do <em>not</em> use today’s date.  
+Because NZ is ahead of the USA, GitHub Pages may treat it as <em>future dated</em> and skip the file when <code>future: false</code> is set (default).</p>
 
-and at the very end copy:
-`{% endraw %}`
+<p><strong>category</strong> → choose one:<br>
+<code>personal</code>, <code>study</code>, <code>homework</code></p>
+
+<h2>2. Add this immediately after the front matter:</h2>
+
+<pre><code>{% raw %}{% raw %}{% endraw %}</code></pre>
+
+<p>Yes — it looks doubled here because we must escape Liquid for the guide to render.  
+When you paste it into your actual file, you want:</p>
+
+<pre><code>{% raw %}</code></pre>
+
+<h2>3. Add this at the VERY end of your HTML file:</h2>
+
+<pre><code>{% endraw %}</code></pre>
+
+<p>This prevents Jekyll from interpreting anything inside the HTML file  
+(like <code>{{ }}</code> or <code>{% %}</code> scripts) which will otherwise break the build.</p>
+
+</body>
+</html>
+{% endraw %}
