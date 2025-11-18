@@ -4,6 +4,7 @@ date: 2002-09-19
 category: 
 ---
 
+{% raw %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -52,3 +53,4 @@ When you paste it into your actual file, you want:</p>
 
 </body>
 </html>
+{% endraw %}
