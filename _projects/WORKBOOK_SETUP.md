@@ -4,32 +4,10 @@ date: 2002-09-19
 category: 
 ---
 
-
-{% raw %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>HTML Copy Guide</title>
-<style>
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    padding: 20px;
-    max-width: 800px;
-    margin: auto;
-}
-code, pre {
-    background: #f5f5f5;
-    padding: 6px 10px;
-    border-radius: 6px;
-    display: block;
-    white-space: pre-wrap;
-}
-h1 {
-    margin-top: 20px;
-}
-</style>
 </head>
 
 <body>
@@ -56,7 +34,9 @@ Because NZ is ahead of the USA, GitHub Pages may treat it as <em>future dated</e
 
 <h2>2. Add this immediately after the front matter:</h2>
 
-<pre><code>{% raw %}{% raw %}{% endraw %}</code></pre>
+<p>An example of what it looks like</p>
+
+<pre><code>{% raw %}Bunch of shitty code{% endraw %}</code></pre>
 
 <p>Yes — it looks doubled here because we must escape Liquid for the guide to render.  
 When you paste it into your actual file, you want:</p>
@@ -72,4 +52,3 @@ When you paste it into your actual file, you want:</p>
 
 </body>
 </html>
-{% endraw %}
