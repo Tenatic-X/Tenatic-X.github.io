@@ -5,4 +5,4 @@ category: personal
 ---
 
 
-[Waist and Weight workbook pdf link](https://tenatic-x.github.io/projects/workbook%20report.pdf)
+[Waist and Weight workbook pdf link](https://tenatic-x.github.io/projects/(personal)%20workbook%20report.pdf)
