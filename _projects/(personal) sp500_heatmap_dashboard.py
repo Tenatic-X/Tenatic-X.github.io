@@ -3,7 +3,7 @@ layout: project
 date: 2026-07-12
 category: personal
 ---
-
+{% raw %}
 """
 S&P 500 Sector Heatmap Dashboard
 ---------------------------------
@@ -1555,3 +1555,4 @@ def update_top_worst(window_value, wildcard_date, n_clicks, end_date):
 
 if __name__ == "__main__":
     app.run(debug=True)
+{% endraw %}
